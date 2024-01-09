@@ -1,6 +1,7 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #fff4f7e0;
+    /* background-color: #fff4f7e0; */
+    background-color: #daefe5;
     background-size: 50%;
     margin: 0;
     padding: 0;
@@ -9,7 +10,10 @@ body {
     -webkit-tap-highlight-color: transparent;  
 }
 .videos {
-    margin-top: 150px;
+    margin-top: 120px;
+}
+.award{
+    background: linear-gradient(#daefe5, #daefe5, #daefe5, #fef8dd)
 }
 
 .award-video-heading {
@@ -17,21 +21,23 @@ body {
 }
 .award-video-parent {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 .award-video {
-    width: 540px;
+    margin-top: 30px;
+    width: 800px;
     background-color: white;
     border-radius: 20px; 
-    box-shadow: 5px 5px 10px rgb(171, 168, 168);
+    box-shadow: 5px 5px 10px rgb(146, 146, 146);
     position: relative;
-    margin: auto; 
 }
 .video-back-text {
     position: absolute;
-    top: 40%;
-    left: 25%;
+    z-index: 1;
+    top: 45%;
+    left: 35%;
     font-size: 25px;
     color: rgb(180, 180, 180);
     z-index: 1;
@@ -39,10 +45,11 @@ body {
 }
 .award-video iframe {
     position: relative;
+    z-index: 2;
     margin: 20px;
     margin-top: 0px;
-    height: 280px;
-    width: 500px;
+    height: 460px;
+    width: 760px;
     border-radius: 10px;
     border: none;
     z-index: 2;
@@ -55,21 +62,24 @@ body {
 }
 /* ---------------------------------- */
 .main-ppd {
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    padding: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(#fef8dd, #fef8dd,#fef8dd,#fef8dd,#fef8dd, #fde5f3);
 }
 .main-ppd-video{
     background-color: white;
     border-radius: 20px; 
-    box-shadow: 5px 5px 10px rgb(171, 168, 168);
+    box-shadow: 5px 5px 10px rgb(146, 146, 146);
     width: 740px;
+    margin: 70px auto;
 }
 .main-ppd iframe{
     margin: 20px;
     margin-top: 0;
-    height: 400px;
+    height: 430px;
     width: 700px;
     border-radius: 10px;
     border: none;
@@ -82,7 +92,9 @@ body {
 }
 /* --------------------- */
 .course{
-    margin-top: 80px;
+    padding-top:10px;
+    padding-bottom: 50px;
+    background: linear-gradient(#fde5f3,#fde5f3,#fde5f3, #daefe5);
 }
 .course-video-heading{
     text-align: center;
@@ -170,7 +182,7 @@ body {
     }
     /* ------------- */
     .main-ppd {
-        margin-top: 100px;
+        padding: 50px auto;
         display: flex;
         justify-content: center;
         align-items: center;
