@@ -178,6 +178,7 @@ body {
     }
     .video-back-text {
         top: 50%;
+        left: 25%;
         font-size: 15px;
     }
     /* ------------- */
